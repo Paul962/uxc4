@@ -4,43 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>First Site</title>
+  <title>Content Template</title>
+  <link rel="stylesheet" href="https://use.typekit.net/opf3uqn.css">
+  <style type="text/css">
+    /*@import url("https://use.typekit.net/opf3uqn.css");*/
+    body {
+      background-color: #e9edef;
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav ul li{
+      display: inline;
+    }
+    .hero {
+      background-color: white;
+      text-align: center;
+      padding-bottom: 2%;
+      margin-bottom: 2%;
+    }
+    .hero h1 {
+      background-color: blue;
+      color: white;
+      font-size: 6em;
+      font-family: open-sans, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      line-height: .75em;
+      padding: 5% 0;
+      margin: 0;
+    }
+    .hero h1 small {
+      display: block;
+      font-size: 40px;
+    word-spacing: 2px;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+​
+    }
+    .projects > div {
+      margin-bottom: 2em;
+      background-color: white;
+    }
+    .projects .project-details {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 1em;
+      align-items: center;
+    }
+    .projects .project-details img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    footer{
+      background-color: #4A5AA1;
+      text-align: center;
+      padding: 2% 0;
+      color: white;
+    }
+    footer a,
+    footer a:hover,
+    footer a:visited{
+      color: white;
+      text-decoration: none;
+    }
+    @media only screen and (max-width: 30em) {
+      .projects .project-details {
+        grid-template-columns: repeat(1, 1fr);
+      }
+​
+    }
+  </style>
 </head>
 <body>
-<!--Add Code Here -->
-<header>
+  <header role="banner">
 
-  <div class="header">
-
-    <div class="logo">
-
-      <img src="img/logo.png" width="100" alt="Company Logo">
-
-    </div>
-
-    <nav>
-
-      <div class="navBar">
-
-        <ul class="navMenu">
-
-          <li><a href="about.html">About</a></li>
-
-          <li><a href="contact.html">Conact</a></li>
-
-        </ul>
-
-      </div>
-
-    </nav>
-
+  <div class="logo">
+<p><a href="index.html">Paul Sobers</a></p>
   </div>
+  <nav>
 
-</header>
+      <ul class="navMenu">
+      <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Conact</a></li>
+      </ul>
 
+  </nav>
 
-
-
-
+  </header>
+  <main>
+    <section class="hero">
+          <h1>Hello <small>my name is</small></h1>
+          <h2>Paul Sobers</h2>
+          <p>User Experience Designer</p>
+    </section>
+​
+    <div class="projects">
+      <div class="project-details">
+        <a href="project1.html">
+          <img src="img/bptubes.jpg" alt="Project 1 Image">
+        </a>
+        <div class="project-content">
+          <h1>Basepair</h1>
+          <p>Basepair is a SaaS data analytics company for NGS analysis.</p>
+          <p><a href="project1.html">Read more &gt;</a></p>
+          <p><a href="http://google.com" target="_blank">View Project in Action &gt;</a></p>
+        </div>
+      </div>
+​
+      <div class="project-details">
+        <img src="https://picsum.photos/200" alt="Project 2 Image">
+        <div class="project-content">
+          <h1>Project 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><a href="project2.html">Read more &gt;</a></p>
+        </div>
+      </div>
+​
+      <div class="project-details">
+        <img src="https://picsum.photos/200" alt="Project 3 Image">
+        <div class="project-content">
+          <h1>Project 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><a href="project3.html">Read more &gt;</a></p>
+      </div>
+      </div>
+​
+    </div>
+​
+  </main>
+​
+  <footer>
+    <p> &copy; 2019 Paul Sobers | <a href="https://linkedin.com/paulcsobers" target="_blank">LinkedIn</a></p>
+  </footer>
 </body>
 </html>
